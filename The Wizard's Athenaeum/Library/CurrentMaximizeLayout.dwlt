@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 8590
+  controlID: 8901
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 8550
+  controlID: 8902
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -352,13 +352,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 74
   m_LastProjectPath: /Users/hannadodd/Documents/git/WizardsAthenaeum/The Wizard's
     Athenaeum
@@ -366,8 +366,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92430000
-    m_LastClickedID: 17298
+    m_SelectedIDs: 8e430000
+    m_LastClickedID: 17294
     m_ExpandedIDs: 00000000484300008243000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000048430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 97}
     m_GridSize: 74
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 160
@@ -602,7 +602,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8eb0ffffb2b0ffff1ed4ffffd2edffffa6f2ffff34f7fffff2f8fffff0f9ffff2afaffff40faffff42fbffffca450000
+      m_ExpandedIDs: 1ed4ffffd2edffffa6f2ffff34f7fffff2f8fffff0f9ffff2afaffff40faffff42fbffffca450000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -645,8 +645,8 @@ MonoBehaviour:
     y: 0
     width: 344
     height: 850
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}

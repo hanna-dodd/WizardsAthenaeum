@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MovingObject {
 
     public int playerDamage;
+    public int hp = 3;
 
     private Transform target;
     private bool skipMove;
@@ -48,6 +49,18 @@ public class Enemy : MovingObject {
         }
 
         AttemptMove<Player>(xDir, yDir);
+
+    }
+
+    public void DamageEnemy(int loss) {
+
+        hp -= loss;
+
+        if (hp <= 0) {
+
+            gameObject.SetActive(false);
+
+        }
 
     }
 

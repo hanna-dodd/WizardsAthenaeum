@@ -10,6 +10,7 @@ public class Player : MovingObject {
     public int enemyDamage = 1;
     public float restartLevelDelay = 1f;
     public TextMeshProUGUI healthText;
+    public int physicalDamage = 1;
 
     private Animator animator;
     private int hp;
@@ -53,7 +54,7 @@ public class Player : MovingObject {
 
         if (horizontal != 0 || vertical != 0) {
 
-            AttemptMove<Wall>(horizontal, vertical);
+            AttemptMove<Enemy>(horizontal, vertical);
 
         }
         
@@ -88,8 +89,9 @@ public class Player : MovingObject {
 
     protected override void OnCantMove<T>(T component) {
 
-        //Wall hitWall = component as Wall;
-        // wall damaging, idk what to do here instead
+        Enemy hitEnemy = component as Enemy;
+
+        hitEnemy.DamageEnemy(physicalDamage);
 
     }
 
