@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour {
 
@@ -14,6 +17,9 @@ public class GameManager : MonoBehaviour {
     private int level = 1;
     private List<Enemy> enemies;
     private bool enemiesMoving;
+    private TextMeshProUGUI levelText;
+    private GameObject levelCard;
+    private bool setup;
 
     void Awake() {
 
@@ -30,7 +36,7 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         enemies = new List<Enemy>();
         boardScript = GetComponent<BoardManager>();
-
+        
         InitGame();
         
     }
@@ -44,12 +50,31 @@ public class GameManager : MonoBehaviour {
 
     void InitGame() {
 
+        setup = true;
+
+        levelCard = GameObject.Find("LevelCard");
+        levelText = GameObject.Find("LevelText").GetComponent<TextMeshProUGUI>();
+
+        levelText.text = "Level " + level;
+        levelCard.SetActive(true);
+        Invoke("HideLevelCard", levelStartDelay);
+
         enemies.Clear();
         boardScript.SetupScene(level);
 
     }
 
+    private void HideLevelCard() {
+
+        levelCard.SetActive(false);
+        setup = false;
+
+    }
+
     public void GameOver() {
+
+        levelText.text = "You have failed";
+        levelCard.SetActive(true);
 
         enabled = false;
 
@@ -57,7 +82,7 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
 
-        if (playersTurn || enemiesMoving) {
+        if (playersTurn || enemiesMoving || setup) {
 
             return;
 

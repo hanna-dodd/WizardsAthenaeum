@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MovingObject {
 
     public int enemyDamage = 1;
     public float restartLevelDelay = 1f;
+    public TextMeshProUGUI healthText;
 
     private Animator animator;
     private int hp;
@@ -15,6 +18,8 @@ public class Player : MovingObject {
 
         animator = GetComponent<Animator>();
         hp = GameManager.instance.playerHP;
+
+        healthText.text = "Health: " + hp;
 
         base.Start();
         
@@ -96,8 +101,12 @@ public class Player : MovingObject {
 
     public void LoseHP(int loss) {
 
+
+        print("lost hp: " + loss);
         //set hit animation
         hp -= loss;
+        healthText.text = "Health: " + hp;
+
         CheckIfGameOver();
 
     }
