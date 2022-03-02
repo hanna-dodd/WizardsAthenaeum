@@ -30,18 +30,22 @@ Floor 1 Enemies:
 * Skeleton
 * Ghost
 * Giant rat
+
 Floor 2 Enemies:
 * Flying book
 * Animated broom
 * Animated armour
+
 Floor 3 Enemies:
 * Slime
 * Awakened tree
 * Centaur
+
 Floor 4 Enemies:
 * Dragon
 * Witch
 * Cyclops
+
 Floor 5 Enemies:
 * Zoviar
 
@@ -55,17 +59,23 @@ These spells causes damage to enemies one time.
 
 ### Lightning Bolt <a name="lbolt"></a>
 
+A bolt of lightning strikes down on an enemy within range. The player may choose an enemy on an adjacent square, doing 5 damage.
+
 ## Area of Effect Spells <a name="aoe"></a>
 
 These spells cause damage in a area of the board, though are harder to handle.
 
 ### Fireball <a name="fireball"></a>
 
+A large explosion of fire appears where you desire, destroying your enemies. The player chooses a center point within range to cause the explosion with radius 2, doing 10 damage to each enemy in the area.
+
 ## Buffing Spells <a name="buff"></a>
 
-These spells increase the players abilities.
+These spells increase the players abilities. They may increase the damage of other spells, increase the hp of the player, increase the damage of physical attacks, etc.
 
 ### Blessed <a name="blessed"></a>
+
+This spell casts a divine ward over the player, protecting them from harm. Take 50% less damage for 10 turns.
 
 # Current Bugs: <a name="bugs"></a>
 * Floor sorting layer is not consistent
