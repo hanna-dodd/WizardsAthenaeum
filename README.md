@@ -22,6 +22,16 @@ The library features four floors, each with distinctive enemies and visuals. Eac
 
 Levels are generated in an 8 by 8 grid, with bookshelves, spell scrolls, and enemies randomly generated in the middle. There are ranges for how many of each item can be place in the level. The player always begins in the bottom left corner and the exit is always in the top right corner.
 
+In the generated levels: brown is a bookshelf, cream is a scroll, red is an enemy, and the player is shown as an adventurer sprite.
+
+Here are some examples of generated levels:
+
+![Example1](SampleLevels/Example1.png)
+
+![Example2](SampleLevels/Example2.png)
+
+![Example3](SampleLevels/Example3.png)
+
 # Enemies <a name="enemies"></a>
 
 Each floor of the library features different enemies. Enemies follow different walking patterns, some follow a set path, some tracking the player. The enemies featured in the unity project follow the player, tracking generally on the x-axis, and only moving on the y-axis when the player is directly above or below them. These enemies also move on every other turn, allowing the player to follow their movements. 
