@@ -5,16 +5,29 @@ A regular workday at the Illusory Athenaeum is quickly turned into a magical cri
 In The Wizard's Athenaeum, play as Riley, a frustrated archivist attempting to save her library from an evil wizard. Battle your way through each floor of the library up to the source of the wizard's power and destroy it. Collect spells and new tomes for your collection, rolling the dice of fate to mark your successes and failures. 
 
 # Table of Contents:
-1. [Level Design](#level)
-2. [Enemies](#enemies)
-3. [Spells](#spells)
+1. [Current Prototype](#news)
+2. [Level Design](#level)
+3. [Enemies](#enemies)
+4. [Spells](#spells)
     1. [Damaging Spells](#damage) 
         1. [Lightning Bolt](#lbolt) 
     2. [Area of Effect Spells](#aoe) 
         1. [Fireball](#fireball) 
     3. [Buffing Spells](#buff) 
         1. [Blessed](#blessed) 
-4. [Current Bugs](#bugs)
+5. [Current Bugs](#bugs)
+
+# Current Prototype <a name="news"></a>
+
+There are two scenes currently within the prototype. The scene "MainScene" contains a skeleton of what the main area may look like. The scene "LevelGeneration" shows the levels being generated, and creates unique levels for the player until they lose all of their health.
+
+The player can currently move, attack the enemies when standing next to them, and can pick up scrolls. When the player reaches the exit area, the next level is generated. 
+
+The enemies currently move towards the player, can attack the player when standing next to them, and disappear when they are killed by the player.
+
+Scrolls can be picked up, though have no functionality yet.
+
+The structure of the spell system is in the early stages of development, each spell is being determined on paper before being introduced to the game.
 
 # Level Design <a name="level"></a>
 
