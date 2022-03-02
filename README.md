@@ -26,11 +26,11 @@ In the generated levels: brown is a bookshelf, cream is a scroll, red is an enem
 
 Here are some examples of generated levels:
 
-![Example1](SampleLevels/Example1.png)
+![Example1]("The Wizard's Athenaeum/SampleLevels/Example1.png")
 
-![Example2](SampleLevels/Example2.png)
+![Example2]("The Wizard's Athenaeum/SampleLevels/Example2.png")
 
-![Example3](SampleLevels/Example3.png)
+![Example3]("The Wizard's Athenaeum/SampleLevels/Example3.png")
 
 # Enemies <a name="enemies"></a>
 
