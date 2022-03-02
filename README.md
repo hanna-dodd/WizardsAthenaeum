@@ -11,9 +11,9 @@ In The Wizard's Athenaeum, play as Riley, a frustrated archivist attempting to s
     1. [Damaging Spells](#damage) 
         1. [Lightning Bolt](#lbolt) 
     2. [Area of Effect Spells](#aoe) 
-        2. [Fireball](#fireball) 
+        1. [Fireball](#fireball) 
     3. [Buffing Spells](#buff) 
-        3. [Blessed](#blessed) 
+        1. [Blessed](#blessed) 
 4. [Sprites](#sprites)
 5. [Current Bugs](#bugs)
 
@@ -55,4 +55,3 @@ These spells increase the players abilities.
 * Floor sorting layer is not consistent
     * Enemies hide behind floor tiles
     * Player sometimes cannot pass through floor tiles
-* 
